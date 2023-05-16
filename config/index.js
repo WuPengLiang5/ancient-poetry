@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/ancient-poetry/',
     proxyTable: {},
 
     // Various Dev Server settings
