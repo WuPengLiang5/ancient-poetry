@@ -1,0 +1,56 @@
+body ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px!important;
+    height: 2px!important;
+}
+
+.poetry{
+    -ms-overflow-style: none;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    overflow: auto;
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.inner-wrapper{
+    padding: 1em;
+}
+
+.content{
+    letter-spacing: 2px;
+    font-size: 1.315rem;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+.item{
+    cursor: pointer;
+    background: 0 0;
+    padding: .5em .5em;
+    margin: 0;
+    color: rgba(0,0,0,.4);
+    border-radius: .5em;
+    -webkit-transition: .1s color ease,.1s padding-left ease,.1s background-color ease;
+    transition: .1s color ease,.1s padding-left ease,.1s background-color ease;
+}
+
+.title{
+    letter-spacing: 2px;
+    font-size: 2.315rem;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.under{
+    border-bottom: 1px solid #2c3e50;
+}
+.center{
+    text-align: center;
+}
