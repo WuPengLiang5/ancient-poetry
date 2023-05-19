@@ -1,0 +1,79 @@
+{
+  "_from": "chinese-poetry@^1.4.1",
+  "_id": "chinese-poetry@1.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-sv9AR2Bo4wm7HLIBVWpWV2mDM7Kae7jI+nkZx3NT1Ut6ZS0WwvBID0Vjh67MB6CEMAlsWW0mk6gki8mvnzlOIQ==",
+  "_location": "/chinese-poetry",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "chinese-poetry@^1.4.1",
+    "name": "chinese-poetry",
+    "escapedName": "chinese-poetry",
+    "rawSpec": "^1.4.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/chinese-poetry/-/chinese-poetry-1.4.1.tgz",
+  "_shasum": "e954ef519685fda4cd1fd3015e4107b42088080c",
+  "_spec": "chinese-poetry@^1.4.1",
+  "_where": "E:\\vue\\ancient-poetry",
+  "author": {
+    "name": "JG",
+    "email": "gaojunqi@outlook.com"
+  },
+  "bugs": {
+    "url": "https://github.com/chinese-poetry/chinese-poetry-npm/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Kenny Wong",
+      "email": "wowohoo@qq.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "最全中华古诗词数据库，唐宋两朝近一万四千古诗人，接近 5.5 万首唐诗加 26 万宋诗. 两宋时期1564位词人，21050首词。",
+  "files": [
+    "README.md",
+    "chinese-poetry/caocaoshiji",
+    "chinese-poetry/ci",
+    "chinese-poetry/json",
+    "chinese-poetry/lunyu",
+    "chinese-poetry/mengxue",
+    "chinese-poetry/rank",
+    "chinese-poetry/shijing",
+    "chinese-poetry/sishuwujing",
+    "chinese-poetry/strains",
+    "chinese-poetry/wudai",
+    "chinese-poetry/youmengying",
+    "chinese-poetry/yuanqu"
+  ],
+  "homepage": "http://shici.store",
+  "keywords": [
+    "chinese-poetry",
+    "chinese",
+    "poetry",
+    "caocaoshiji",
+    "lunyu",
+    "mengxue",
+    "shijing",
+    "sishuwujing",
+    "strains",
+    "wudai",
+    "youmengying",
+    "yuanqu"
+  ],
+  "license": "MIT",
+  "name": "chinese-poetry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinese-poetry/chinese-poetry-npm.git"
+  },
+  "version": "1.4.1"
+}
