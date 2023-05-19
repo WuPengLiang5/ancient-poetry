@@ -16,6 +16,11 @@ import './assets/css/reset.css'
 //全局样式
 import './assets/css/global.css'
 
+//引入axios
+import axios from "axios"
+//使用axios
+Vue.prototype.axios = axios
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

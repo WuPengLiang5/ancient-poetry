@@ -1,4 +1,5 @@
 import lunyu from "chinese-poetry/chinese-poetry/lunyu/lunyu.json"
+// import lunyu from "@/static/chinese-poetry/chinese-poetry/lunyu/lunyu.json"
 
 export function getChapter(){
     let chapters = []

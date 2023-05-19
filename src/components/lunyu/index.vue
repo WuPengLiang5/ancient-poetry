@@ -30,6 +30,9 @@ export default {
     },
     created(){
         this.getChapter()
+        // this.axios.get('static/chinese-poetry/chinese-poetry/lunyu/lunyu.json').then(response =>{
+        //     console.log(response.data)
+        // })
     },
     methods:{
         getChapter(){
