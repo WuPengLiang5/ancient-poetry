@@ -75,14 +75,15 @@ export default {
 <style scoped>
 .home{
   background-image: url('~@/assets/images/ying.jpeg');
-  height: 575px;
+  /* height: 575px; */
+  width: 100%;
+  height: 100%;
   background-size: cover;
   margin: 0!important;
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 .nav{
-  width: 500px;
   padding: 10px;
   margin: 0 auto;
   padding-top: 50px;

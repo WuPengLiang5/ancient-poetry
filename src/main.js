@@ -21,6 +21,8 @@ import axios from "axios"
 //使用axios
 Vue.prototype.axios = axios
 
+// import 'amfe-flexible';
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

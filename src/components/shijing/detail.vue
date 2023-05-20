@@ -1,17 +1,19 @@
 <template>
   <div class="poetry shijing-detail">
-      <div class="title">{{title}}</div>
-      <div class="shijing-chapter">
-          <p>
-              <router-link to='/shijing'>{{poetry.chapter}}.{{poetry.section}}</router-link>
-          </p>
-      </div>
+      <div class="inner-wrapper">
+          <div class="title">{{title}}</div>
+          <div class="shijing-chapter">
+            <p>
+                <router-link to='/shijing'>{{poetry.chapter}}.{{poetry.section}}</router-link>
+            </p>
+          </div>
       <div class="content">
           <p v-for="(content,index) in poetry.content" :key="index">
             {{content}}
             <br/>
           </p>
       </div>
+    </div>
   </div>
 </template>
 
@@ -84,7 +86,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .shijing-detail{
-    width: 600px;
+    width: 60%;
+    /* padding: 20px; */
 }
 .shijing-chapter{
     text-align:right;
@@ -95,4 +98,8 @@ export default {
 .shijing-chapter a:hover{
     color: green;
 }
+/* .content p{
+    text-align: left;
+    padding-left: 10%;
+} */
 </style>

@@ -41,7 +41,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .shijing-list{
-  width: 500px;
+  /* width: 500px; */
+  width: 50%;
 }
 .box{
   padding-top: 10px;
@@ -59,7 +60,7 @@ export default {
   flex-wrap: wrap;
 }
 .box-card ul li{
-  width: 100px;
+  width: 20%;
   padding: 10px;
 }
 a {
