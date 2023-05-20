@@ -1,0 +1,57 @@
+/* @media screen and (min-width: 600px) and (max-width: 800px){
+    html{
+        font-size: 16px;
+    }
+} */
+
+@media only screen{
+    /* html{ */
+        /* font-size: 35px; */
+    /* } */
+}
+
+@media only screen and (max-width: 767px){
+    .poetry {
+        width: 100%;
+        overflow: visible;
+        height: auto;
+        position: static;
+    }
+    .shijing-list{
+        width: 100%!important;
+    }
+    .shishuwujing-list{
+        width: 100%!important;
+    }
+    .lunyu-list{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .huajianji-main{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .list-main{
+        height: 100%!important;
+    }
+    .shijing-detail{
+        width: 100%!important;
+        height: 100%;
+        /* text-align: left; */
+    }
+    .sishuwujing-detail{
+        width: 100%!important;
+        height: 100%;
+        /* text-align: left; */
+    }
+    .lunyu-detail{
+        width: 100%!important;
+        height: 100%;
+        /* text-align: left; */
+    }
+    .huajianji-detail{
+        width: 100%!important;
+        height: 100%;
+        /* text-align: left; */
+    }
+}

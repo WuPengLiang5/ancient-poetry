@@ -91,7 +91,7 @@ export default {
 }
 .shijing-chapter{
     text-align:right;
-    padding:0 88px 15px 0;
+    padding:0 2.34rem 0.4rem 0;
     font-size: 1.25rem;
     color: gray;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="poetry" style="width:500px">
+  <div class="poetry huajianji-detail" style="width:500px">
     <div class="inner-wrapper">
         <div class="title">{{poetry.title}}</div>
         <div class="author">{{poetry.author}}</div>
@@ -15,7 +15,7 @@
           </router-link>
         </div>
         <div>
-        <h3 style="text-align:left;font-size: 1.28571429rem;">注释</h3>
+        <h3 style="text-align:left;font-size: 1.28571429rem;margin-bottom:1rem">注释</h3>
         <div class="notes content">
             <p v-for="(note,index) in poetry.notes" :key="index">
               {{note}}
@@ -60,15 +60,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .author{
     padding-top: .5em;
     padding-bottom: .5em;
-    color: #ccc;
+    color: gray;
     letter-spacing: 2px;
     font-size: 1.315rem;
     font-weight: 300;
     line-height: 1.8;
+}
+.huajianji-detail .content p{
+  text-align: left;
 }
 .meta{
   text-align: right;

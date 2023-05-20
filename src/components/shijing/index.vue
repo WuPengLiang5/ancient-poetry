@@ -1,5 +1,5 @@
 <template>
-    <div class="poetry shijing-list">
+    <div class="shijing-list poetry ">
       <div class="inner-wrapper">
         <div class="title">诗经</div>
         <div class="content" style="text-align:right">

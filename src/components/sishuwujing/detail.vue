@@ -1,17 +1,19 @@
 <template>
   <div class="poetry sishuwujing-detail">
-      <div class="title">{{poetry.chapter}}</div>
-       <div class="sishuwujing-chapter">
-          <p>
-              <router-link to='/sishuwujing'>四书五经.{{sishuwujing[type]}}</router-link>
-          </p>
-      </div>
-      <div class="content" style="text-align:left">
-          <p v-for="(paragraphs,index) in poetry.paragraphs" :key="index">
-            {{paragraphs}}
-            <br/>
-          </p>
-      </div>
+      <div class="inner-wrapper">
+          <div class="title">{{poetry.chapter}}</div>
+          <div class="sishuwujing-chapter">
+            <p>
+                <router-link to='/sishuwujing'>四书五经.{{sishuwujing[type]}}</router-link>
+            </p>
+          </div>
+          <div class="content" style="text-align:left">
+            <p v-for="(paragraphs,index) in poetry.paragraphs" :key="index">
+                {{paragraphs}}
+                <br/>
+            </p>
+          </div>
+      </div>      
   </div>
 </template>
 
@@ -48,11 +50,11 @@ export default {
 
 <style scoped>
 .sishuwujing-detail{
-    width: 800px;
+    width: 60%;
 }
 .sishuwujing-chapter{
     text-align:right;
-    padding:0 60px 15px 0;
+    padding:0 3% 15px 0;
     font-size: 1.25rem;
     color: gray;
 }

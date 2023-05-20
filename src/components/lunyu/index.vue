@@ -1,5 +1,11 @@
 <template>
   <div class="poetry lunyu-list">
+      <div class="title">论语</div>
+       <div class='home-back content'>
+          <p>
+              <router-link to="/" class="under">主页</router-link>
+          </p>
+      </div>
       <ul>
           <li v-for="(chapter,index) in chapters" :key="index">
               <router-link :to="{
@@ -10,11 +16,7 @@
               }">{{chapter}}</router-link>
           </li>
       </ul>
-      <div class='home-back content'>
-          <p>
-              <router-link to="/" class="under">主页</router-link>
-          </p>
-      </div>
+     
   </div>
 </template>
 
@@ -30,9 +32,6 @@ export default {
     },
     created(){
         this.getChapter()
-        // this.axios.get('static/chinese-poetry/chinese-poetry/lunyu/lunyu.json').then(response =>{
-        //     console.log(response.data)
-        // })
     },
     methods:{
         getChapter(){
@@ -44,8 +43,8 @@ export default {
 
 <style scoped>
 .lunyu-list{
-    width: 500px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     padding: 10px;
     top:0;
 }
@@ -60,9 +59,9 @@ export default {
     font-size: 1.2rem;
 }
 .home-back{
-    text-align: right;
+    text-align: center;
 }
 .home-back p{
-    padding:10px;
+    padding:5px 10px;
 }
 </style>

@@ -82,7 +82,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .shishuwujing-list{
-  width: 500px;
+  width: 50%;
 }
 .box{
   padding-top: 10px;

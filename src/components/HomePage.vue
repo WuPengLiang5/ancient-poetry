@@ -78,6 +78,7 @@ export default {
   /* height: 575px; */
   width: 100%;
   height: 100%;
+  min-height: 320px;
   background-size: cover;
   margin: 0!important;
   background-repeat: no-repeat;

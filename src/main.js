@@ -15,13 +15,15 @@ Vue.use(ElementUI);
 import './assets/css/reset.css'
 //全局样式
 import './assets/css/global.css'
+//网页样式
+import './assets/css/site.min.css'
 
 //引入axios
 import axios from "axios"
 //使用axios
 Vue.prototype.axios = axios
 
-// import 'amfe-flexible';
+// import 'lib-flexible/flexible'
 
 Vue.config.productionTip = false
 

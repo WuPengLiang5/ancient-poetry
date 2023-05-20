@@ -1,24 +1,21 @@
 <template>
-  <div>
-      <div class="huajianji-main poetry">
+    <div class="huajianji-main poetry">
         <div class="inner-wrapper">
             <div class="title">花间集</div>
             <p style="text-align:right">
-                <router-link to="/" >主页</router-link>
+                    <router-link to="/" >主页</router-link>
             </p>
             <p>
-                <ul>
-                    <li v-for="(sequence,index) in sequences" :key="index" class="item content">  
-                        <router-link :to="{name:'HuaJianJiList',query:{book_index:index}}">
-                            {{sequence.nameZn}}
-                        </router-link>       
-                    </li>
-                </ul>
+                    <ul>
+                        <li v-for="(sequence,index) in sequences" :key="index" class="item content">  
+                            <router-link :to="{name:'HuaJianJiList',query:{book_index:index}}">
+                                {{sequence.nameZn}}
+                            </router-link>       
+                        </li>
+                    </ul>
             </p>
-      </div>
         </div>
-        
-  </div>
+    </div>
 </template>
 
 <script>
@@ -40,10 +37,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 .huajianji-main{
-    width: 500px;
+    width: 50%;
     height: auto;
     margin: 0 auto;
 }
