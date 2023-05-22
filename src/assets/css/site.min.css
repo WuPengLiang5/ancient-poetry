@@ -5,9 +5,9 @@
 } */
 
 @media only screen{
-    /* html{ */
-        /* font-size: 35px; */
-    /* } */
+    html{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -53,5 +53,23 @@
         width: 100%!important;
         height: 100%;
         /* text-align: left; */
+    }
+
+    .tangshi-detail{
+        width: 100%!important;
+        height: 100%;
+    }
+
+    .nantang-main{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .nantang-list{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .nantang-detail{
+        width: 100%!important;
+        height: 100%;
     }
 }

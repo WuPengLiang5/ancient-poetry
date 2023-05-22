@@ -28,7 +28,21 @@
             <router-link to="/huajianji" @click.native="changeShow()">花间集</router-link>
           </el-card>
         </el-col>
-      </el-row>  
+      </el-row> 
+      <el-row class="row-con">
+        <el-col>
+          <el-card shadow="hover" class="card">
+            <router-link to="/nantang" @click.native="changeShow()">南唐二主词</router-link>
+          </el-card>
+        </el-col>
+      </el-row> 
+       <el-row class="row-con">
+        <el-col>
+          <el-card shadow="hover" class="card">
+            <router-link to="/tangshi" @click.native="changeShow()">唐诗</router-link>
+          </el-card>
+        </el-col>
+      </el-row> 
     </div>
     <router-view/>
   </div>
@@ -50,14 +64,14 @@ export default {
     }else{
       this.isShow = false
     }
-    console.log(this.$route.path,this.isShow)
+    // console.log(this.$route.path,this.isShow)
   },
   mounted(){
     // console.log('mounted')
   },
   watch:{
     $route(newVal,oldVal){
-      console.log(newVal.path,oldVal.path)
+      // console.log(newVal.path,oldVal.path)
       if(newVal.path === '/'){
         this.isShow = true
       }
