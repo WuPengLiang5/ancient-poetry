@@ -155,6 +155,7 @@ export default {
       }
     },
     methods: {
+      // 切换全唐诗、全宋诗
       handleClick(tab, event) {
         this.activeName = tab.name
         this.controlChanges = [{
@@ -167,6 +168,7 @@ export default {
           'isActive':false,
           'index':'all'
         }]
+        this.listQuery.author = undefined
         if(tab.name === 'tang-3'){
           // this.componentName = 'Tang_ThreeVue'
           this.searchPoetry('all','all','all')
@@ -211,9 +213,10 @@ export default {
           this.controlChanges[0].index = index
         }
         this.listQuery.type = type        
-        if(author != ''){
+        if(author){
           this.listQuery.author = author
         }
+        console.log(this.listQuery)
         searchAllPoetry(this.listQuery).then(res => {
           this.poetryList = res
         })
