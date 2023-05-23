@@ -11,14 +11,15 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/':{
-        target:'https://wupengliang5.github.io/ancient-poetry/dist',
-        ws:false,
-        changeOrigin:true,
-        pathRewrite:{
-          '^/':''
-        }
-      }
+      // 本地环境的反向代理
+      // '/':{
+      //   target:'https://wupengliang5.github.io/ancient-poetry/dist',
+      //   ws:false,
+      //   changeOrigin:true,
+      //   pathRewrite:{
+      //     '^/':''
+      //   }
+      // }
     },
 
     // Various Dev Server settings
