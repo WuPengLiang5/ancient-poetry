@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div ref='home' class="home">
     <div class="nav" v-show="isShow">
       <el-row class="row-con">
         <el-col>
@@ -43,6 +43,13 @@
           </el-card>
         </el-col>
       </el-row> 
+      <el-row class="row-con">
+        <el-col>
+          <el-card shadow="hover" class="card">
+            <router-link to="/ci" @click.native="changeShow()">宋词</router-link>
+          </el-card>
+        </el-col>
+      </el-row> 
     </div>
     <router-view/>
   </div>
@@ -55,7 +62,8 @@ export default {
   name: 'HomePage',
   data () {
     return {  
-      isShow:true
+      isShow:true,
+       windowHeight:document.documentElement.clientHeight,
     }
   },
   created(){
@@ -68,6 +76,16 @@ export default {
   },
   mounted(){
     // console.log('mounted')
+    var that = this;
+    // <!--把window.onresize事件挂在到mounted函数上-->
+    window.onresize = () => {
+      return (() => {
+        window.fullHeight = document.documentElement.clientHeight;
+        window.fullWidth = document.documentElement.clientWidth;
+        that.windowHeight = window.fullHeight;  // 高
+        that.windowWidth = window.fullWidth; // 宽
+      })()
+    };
   },
   watch:{
     $route(newVal,oldVal){
@@ -75,6 +93,14 @@ export default {
       if(newVal.path === '/'){
         this.isShow = true
       }
+    },
+    windowHeight(newVal,oldVal){
+      if(newVal < 505){
+        this.$refs.home.style.height = '575px'
+      }else{
+        this.$refs.home.style.height = '100%'
+      }
+        // console.log(newVal,oldVal)
     }
   },
   methods:{

@@ -72,4 +72,27 @@
         width: 100%!important;
         height: 100%;
     }
+
+    .Song_list{
+        height: 65vh!important;
+    }
+    .ci-detail{
+        width: 100%!important;
+        height: 100%;
+        text-align: left;
+    }
+    .ci-detail .title{
+        font-weight: 500;
+    }
+    .ci-detail .author{
+        font-weight: normal!important;
+    }
+    .ci-detail .back{
+        text-align: right;
+        font-size: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .ci-detail .back a:hover{
+        text-decoration: underline!important;
+    }
 }

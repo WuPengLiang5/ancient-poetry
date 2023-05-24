@@ -95,6 +95,21 @@ export default new Router({
           name: 'TangPoetryDetail',
           component:() => import('@/components/tangshi/detail')
         },
+        {
+          path: '/ci',
+          name: 'Ci',
+          component:() => import('@/components/ci/index')
+        },
+        {
+          path: '/ci/detail',
+          name: 'CiDetail',
+          component:() => import('@/components/ci/detail')
+        },
+        {
+          path: '/ci/detail/author',
+          name: 'AuthorDetail',
+          component:() => import('@/components/ci/components/authorDetail')
+        },
       ]
     },
   ]
